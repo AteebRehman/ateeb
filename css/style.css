@@ -16,10 +16,11 @@ body {
     line-height: 1.7;
     color: #1f2937;
     background-color: #f5f7fb;
+
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
 }
-
 
 /* =========================
    NAVBAR
@@ -61,7 +62,7 @@ body {
 }
 
 /* =========================
-   HERO SECTION
+   HERO SECTION (FIXED TEXT CLARITY)
 ========================= */
 .hero {
     min-height: 90vh;
@@ -99,6 +100,24 @@ body {
     box-shadow: 0 10px 25px rgba(0,0,0,0.3);
 }
 
+/* 🔥 FIXED TEXT COLORS (IMPORTANT) */
+.hero h1 {
+    font-size: 2.8rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.hero h2 {
+    font-size: 1.2rem;
+    color: #f1f5f9;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    color: #e5e7eb;
+    margin-bottom: 10px;
+}
+
 /* RESPONSIVE */
 @media (max-width: 768px) {
     .hero-content {
@@ -124,24 +143,6 @@ h2 {
     font-size: 2rem;
     margin-bottom: 20px;
     color: #0f172a;
-}
-
-/* =========================
-   ABOUT
-========================= */
-.about {
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.05);
-}
-
-.profile-picture {
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #38bdf8;
-    margin-bottom: 20px;
 }
 
 /* =========================
@@ -190,7 +191,6 @@ h2 {
 .progress {
     height: 100%;
     background: linear-gradient(90deg, #38bdf8, #0ea5e9);
-    border-radius: 20px;
 }
 
 /* =========================
@@ -211,16 +211,6 @@ h2 {
 
 .project-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-}
-
-.project-card h3 {
-    margin-bottom: 10px;
-    color: #0f172a;
-}
-
-.project-card p {
-    color: #475569;
 }
 
 /* =========================
@@ -246,7 +236,6 @@ h2 {
     color: white;
     text-decoration: none;
     border-radius: 6px;
-    font-weight: 500;
     transition: 0.3s;
 }
 
@@ -263,22 +252,4 @@ footer {
     padding: 20px;
     background: #0f172a;
     color: #94a3b8;
-    margin-top: 40px;
-}
-
-/* =========================
-   RESPONSIVE
-========================= */
-@media (max-width: 768px) {
-    .hero h1 {
-        font-size: 2rem;
-    }
-
-    .nav-links {
-        display: none;
-    }
-
-    section {
-        padding: 50px 5%;
-    }
 }
