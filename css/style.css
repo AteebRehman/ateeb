@@ -65,7 +65,7 @@ body {
    HERO SECTION (FIXED TEXT CLARITY)
 ========================= */
 .hero {
-    min-height: 90vh;
+    min-height: 75vh;
     display: flex;
     align-items: center;
     padding: 80px 8%;
@@ -78,11 +78,12 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    gap: 50px;
+    gap: 60px;
 }
 
 .hero-text {
     flex: 1;
+    max-width: 600px;
 }
 
 .hero-image {
@@ -115,7 +116,8 @@ body {
 
 .hero p {
     color: #e5e7eb;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
+    line-height: 1.6;   
 }
 
 /* RESPONSIVE */
