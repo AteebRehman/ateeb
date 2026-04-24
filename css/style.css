@@ -16,6 +16,8 @@ body {
     line-height: 1.7;
     color: #1f2937;
     background-color: #f5f7fb;
+    webkit-font-smoothing: antialiased;
+    moz-osx-font-smoothing: grayscale;
 }
 
 /* =========================
